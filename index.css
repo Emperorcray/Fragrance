@@ -1,0 +1,3535 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+@media screen and (min-width:320px) and (max-width:429px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+    }
+    nav{
+        height: 8vh;
+        width: 89vw;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+    }
+    .sidebar{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+      
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .nav_link_1{
+       display: none;
+    }
+    .nav_link_2{
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_2>a{
+        color: white;
+        font-size: large;
+    }
+    section{
+        height: 430vh;
+        width: 100%;
+    }
+    .main_img{
+        height: 40vh;
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+    .samples{
+        height: 87vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+    }
+    .samples>div{
+        height: 36vh;
+        width: 95vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .sample_1,.sample_2,.sample_3,.fragrance_intro{
+        height: 15vh;
+        width: 25vw;
+    }
+    .fragrance_intro{
+        text-align: center;
+    }
+    .sample_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px 6px 6px 6px;
+    }
+    .intro_title{
+        font-size: 0.8rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 3px;
+        font-weight: bold;
+    }
+    .intro_summary{
+        font-size: xx-small;
+        margin-top: -14px;
+    }
+    .fragrance_intro>a{
+        height: 7vh;
+        width: 16vw;
+        border: 2px solid black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: black;
+        font-size: x-small;
+        margin-left: 12px;
+        margin-top: -4px;
+    }
+    .fragrance_intro>a:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    } 
+    .perfume_intro{
+        height: 100%;
+        width: 35vw;
+        background-image: url('images.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .perfume_intro_heading{
+        width: 18vw;
+        font-size: 0.7rem;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .perfume_intro_summary{
+        width: 20vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        color: white;
+        margin-left: 15px;
+        margin-top: -10px;
+    }
+    .perfume_intro>a{
+        border: 2px solid;
+        display: block;
+        height: 7vh;
+        font-size: small;
+        align-content: center;
+        text-align: center;
+        width: 16vw;
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .perfume_intro>a:hover{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+    }   
+    .description_1{
+        height: 14vh;
+        width: 100%;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+        text-align: center;
+        align-content: center;
+    }
+    .description_heading{
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 1px;
+    }
+    .description_summary{
+        font-size: x-small;
+        color: gray;
+        margin-top: -4px;
+    }
+    .collections{
+        height: 200vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .collections_heading{
+        height: 5vh;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        margin-top: -240px;
+    }
+    .collections_summary{
+        height: 8vh;
+        text-align: center;
+        line-height: 10px;
+        color: gray;
+        font-size: x-small;
+        margin-top: -190px;
+    }
+    .product_intro{
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -60px;
+    }
+    .product_intro_img_container{
+        height: 15vh;
+        width: 24vw;
+    }  
+    .product_intro_img_container>p{
+        margin-top: -3px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .product_intro_img{
+        width: 100%;
+        height: 100%;
+    } 
+    .main_img_2{
+        height: 40vh;
+        width: 80vw;
+        text-align: center;
+        margin-left: 35px;
+    }
+    .img_2{
+        height: 100%;
+        width: 100%;
+    }
+    .features_heading{
+        height: 7vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+        margin-left: 34px;
+    }
+    .btn_group{
+        text-align: center;
+    }
+    .btn_group>a{
+        height: 3vh;
+        width: 7vw;
+        border: 1px solid red;
+        color: red;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn_group>a:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+    .feature_brands{
+        height: 60vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 34px;
+    }
+    .kenzo,.oriflame{
+        height: 50vh;
+        width: 23vw;
+    }
+    .kenzo>p,.divine>p{
+        margin-top: -2px;
+        font-size: small;
+        color: gray;
+    }
+    .divine{
+        height: 50vh;
+        width: 25vw;
+    }
+    .kenzo_img,.oriflame_img,.divine_img{
+        width: 100%;
+        height: 16vh;
+    }
+    .oriflame_logo,.kenzo_logo{
+        height: 2vh;
+    }
+    .bottom_logo{
+        margin-top: -14px;
+        height: 12vh;
+        width: 13vw;
+    }
+    .customer_remark{
+        height: 50vh;
+        width: 100%;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+    .customer_remark_heading{
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    .reports{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .reports>div{
+        height: 36vh;
+        width: 20vw;
+        border: 1px solid;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        
+    }
+    .txt_1{
+        margin-left: 20px;
+        font-size: 3rem;
+        margin-top: -1px;
+        height: 6vh;
+        color: #38b6ff;
+    }
+    .main_report{
+        margin-top: -34px;
+        font-size: x-small;
+        color: gray;
+        width: 15vw;
+        margin-left: 20px;
+    }
+    .reports_img{
+        height: 2vh;
+        margin-left: 20px;
+    }
+    .last_part{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .last_part>div{
+        height: 30vh;
+        width: 20vw;
+    }
+    .verify>i{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: larger;
+        color: #5271ff;
+    }
+    .last_part_heading{
+        text-align: center;
+        font-weight: bolder;
+        font-size: small;
+    }
+    .last_part_summary{
+        color: gray;
+        font-size: x-small;
+        width: 16vw;
+        margin-left: 22px;
+        text-align: center;
+    }
+    footer{
+        height: 74vh;
+        width: 100%;
+    }
+    .footer_1{
+        height: 65vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+    }
+   
+    .footer_1_heading{
+        height: 24vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer_1_heading>p{
+        width: 24vw;
+        color: gray;
+        font-size: x-small;
+        margin-top: -1px;
+    }
+    .Subscribe_container{
+        height: 12vh;
+        width: 40vw;
+        border: 2px solid gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .Subscribe_container>div{
+        margin-top: 20px;
+        font-size: 1.2rem;
+        margin-top: 2px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .Subscribe_container>a{
+        height: 5vh;
+        width: 10vw;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: 3px;
+        border-color: #38b6ff;
+        color: #38b6ff;
+    }
+    .footer_1_links{
+        height: 34vh;
+        width: 86vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .link_group_1{
+        list-style: none;
+        display: grid;
+        place-content: center;
+        
+    }
+    .link_group_1>li{
+        margin-left: -30px;
+    }
+    .link_group_2{
+        list-style: none;
+    }
+    .link_1{
+        font-weight: bolder;
+    }
+    .link_2{
+        font-weight: 100;
+    }
+    .link_2>a{
+        color: gray;
+        text-decoration: none;
+        font-size: small;
+    }
+    .footer_2{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer_img{
+        height: 3vh;
+    }
+    .footer_img_2{
+        height: 2vh;
+    }
+    .payment_method{
+        height: 100%;
+        width: 33vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 4px;
+    }
+    .socials{
+        height: 100%;
+        width: 58vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials>p{
+        color: gray;
+        font-size: small;
+    }
+    .socials>a{
+        height: 3.8vh;
+        width: 8vw;
+        border: 1px solid #38b6ff;
+        border-radius: 20px 20px 20px 20px;
+        display: grid;
+        place-content: center;
+        color: white;
+        background-color: #38b6ff;
+    }
+}
+@media screen and (min-width:430px) and (max-width:450px){
+    header{
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+
+    }
+    nav{
+        height: 8vh;
+        width: 83vw;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+    }
+    .sidebar{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+      
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .nav_link_1{
+       display: none;
+    }
+    .nav_link_2{
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_2>a{
+        color: white;
+        font-size: large;
+    }
+    section{
+        height: 550vh;
+        width: 100%;
+    }
+    .main_img{
+        height: 74vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+    .samples{
+        height: 87vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+    }
+    .samples>div{
+        height: 33vh;
+        width: 88vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .sample_1,.sample_2,.sample_3,.fragrance_intro{
+        height: 80%;
+        width: 20vw;
+    }
+    .sample_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px 6px 6px 6px;
+    }
+    .intro_title{
+        font-size: 1rem;
+        height: 4vh;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 3px;
+    }
+    .intro_summary{
+        font-size: xx-small;
+        margin-top: -14px;
+    }
+    .fragrance_intro>a{
+        height: 7vh;
+        width: 16vw;
+        border: 2px solid black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: black;
+        font-size: x-small;
+        margin-left: 8px;
+        margin-top: -4px;
+    }
+    .fragrance_intro>a:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    } 
+    .perfume_intro{
+        height: 100%;
+        width: 35vw;
+        background-image: url('images.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .perfume_intro_heading{
+        width: 18vw;
+        font-size: 0.7rem;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .perfume_intro_summary{
+        width: 20vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        color: white;
+        margin-left: 15px;
+        margin-top: -10px;
+    }
+    .perfume_intro>a{
+        border: 2px solid;
+        display: block;
+        height: 6vh;
+        font-size: small;
+        align-content: center;
+        text-align: center;
+        width: 16vw;
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .perfume_intro>a:hover{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+    }   
+    .description_1{
+        height: 22vh;
+        width: 100%;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+        text-align: center;
+        align-content: center;
+    }
+    .description_heading{
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 1px;
+    }
+    .description_summary{
+        font-size: small;
+        color: gray;
+        margin-top: -4px;
+    }
+    .collections{
+        height: 260vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .collections_heading{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        margin-top: -150px;
+    }
+    .collections_summary{
+        text-align: center;
+        line-height: 10px;
+        color: gray;
+        font-size: x-small;
+        margin-top: -120px;
+    }
+    .product_intro{
+        height: 35vh;
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 13px;
+    }
+    .product_intro_img_container{
+        height: 20vh;
+        width: 20vw;
+    }  
+    .product_intro_img_container>p{
+        margin-top: -3px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .product_intro_img{
+        width: 100%;
+        height: 100%;
+    } 
+    .main_img_2{
+        height: 80vh;
+        width: 80vw;
+        text-align: center;
+        margin-left: 35px;
+    }
+    .img_2{
+        height: 100%;
+        width: 100%;
+    }
+    .features_heading{
+        height: 7vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+        margin-left: 34px;
+    }
+    .btn_group{
+        text-align: center;
+    }
+    .btn_group>a{
+        height: 4vh;
+        width: 5vw;
+        border: 1px solid red;
+        color: red;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn_group>a:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+    .feature_brands{
+        height: 66vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 34px;
+    }
+    .kenzo,.oriflame{
+        height: 50vh;
+        width: 23vw;
+    }
+    .kenzo>p,.divine>p{
+        margin-top: -2px;
+        font-size: small;
+        color: gray;
+    }
+    .divine{
+        height: 50vh;
+        width: 25vw;
+    }
+    .kenzo_img,.oriflame_img,.divine_img{
+        width: 100%;
+        height: 25vh;
+    }
+    .oriflame_logo,.kenzo_logo{
+        height: 4vh;
+    }
+    .bottom_logo{
+        margin-top: -14px;
+        height: 12vh;
+        width: 13vw;
+    }
+    .customer_remark{
+        height: 60vh;
+        width: 100%;
+        border: 1px solid #add8e694;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+    .customer_remark_heading{
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 60px;
+    }
+    .reports{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .reports>div{
+        height: 36vh;
+        width: 20vw;
+        border: 1px solid;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        
+    }
+    .txt_1{
+        margin-left: 20px;
+        font-size: 3rem;
+        margin-top: -1px;
+        height: 6vh;
+        color: #38b6ff;
+    }
+    .main_report{
+        margin-top: -34px;
+        font-size: x-small;
+        color: gray;
+        width: 15vw;
+        margin-left: 20px;
+    }
+    .reports_img{
+        height: 3vh;
+        margin-left: 20px;
+    }
+    .last_part{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .last_part>div{
+        height: 30vh;
+        width: 20vw;
+    }
+    .verify>i{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: larger;
+        color: #5271ff;
+    }
+    .last_part_heading{
+        text-align: center;
+        font-weight: bolder;
+        font-size: small;
+    }
+    .last_part_summary{
+        color: gray;
+        font-size: x-small;
+        width: 16vw;
+        margin-left: 22px;
+        text-align: center;
+    }
+    footer{
+        height: 74vh;
+        width: 100%;
+    }
+    .footer_1{
+        height: 65vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+   
+    .footer_1_heading{
+        height: 24vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer_1_heading>p{
+        width: 19vw;
+        color: gray;
+        font-size: x-small;
+        margin-top: -1px;
+    }
+    .Subscribe_container{
+        height: 15vh;
+        width: 35vw;
+        border: 2px solid gray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .Subscribe_container>div{
+        margin-top: 20px;
+        font-size: 1rem;
+        margin-top: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20vw;
+        font-weight: bold;
+    }
+    .Subscribe_container>a{
+        height: 5vh;
+        width: 6vw;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: 3px;
+        border-color: #38b6ff;
+        color: #38b6ff;
+    }
+    .footer_1_links{
+        height: 34vh;
+        width: 84vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .link_group_1{
+        list-style: none;
+        display: grid;
+        place-content: center;
+    }
+    .link_group_2{
+        list-style: none;
+    }
+    .link_1{
+        font-weight: bolder;
+    }
+    .link_2{
+        font-weight: 100;
+    }
+    .link_2>a{
+        color: gray;
+        text-decoration: none;
+        font-size: small;
+    }
+    .footer_2{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer_img{
+        height: 6vh;
+    }
+    .footer_img_2{
+        height: 3vh;
+    }
+    .payment_method{
+        height: 100%;
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 3px;
+    }
+    .socials{
+        height: 100%;
+        width: 45vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials>p{
+        color: gray;
+        font-size: small;
+    }
+    .socials>a{
+        height: 5vh;
+        width: 6vw;
+        border: 1px solid #38b6ff;
+        border-radius: 20px 20px 20px 20px;
+        display: grid;
+        place-content: center;
+        color: white;
+        background-color: #38b6ff;
+    }
+}
+@media screen and (min-width:451px) and (max-width:599px){
+    
+    header{
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+
+    }
+    nav{
+        height: 8vh;
+        width: 83vw;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+    }
+    .sidebar{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+      
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .nav_link_1{
+       display: none;
+    }
+    .nav_link_2{
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_2>a{
+        color: white;
+        font-size: large;
+    }
+    section{
+        height: 550vh;
+        width: 100%;
+    }
+    .main_img{
+        height: 74vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+    .samples{
+        height: 87vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+    }
+    .samples>div{
+        height: 33vh;
+        width: 88vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .sample_1,.sample_2,.sample_3,.fragrance_intro{
+        height: 80%;
+        width: 20vw;
+    }
+    .sample_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px 6px 6px 6px;
+    }
+    .intro_title{
+        font-size: 1rem;
+        height: 4vh;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 3px;
+    }
+    .intro_summary{
+        font-size: xx-small;
+        margin-top: -14px;
+    }
+    .fragrance_intro>a{
+        height: 7vh;
+        width: 16vw;
+        border: 2px solid black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: black;
+        font-size: x-small;
+        margin-left: 8px;
+        margin-top: -4px;
+    }
+    .fragrance_intro>a:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    } 
+    .perfume_intro{
+        height: 100%;
+        width: 35vw;
+        background-image: url('images.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .perfume_intro_heading{
+        width: 18vw;
+        font-size: 0.7rem;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .perfume_intro_summary{
+        width: 20vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        color: white;
+        margin-left: 15px;
+        margin-top: -10px;
+    }
+    .perfume_intro>a{
+        border: 2px solid;
+        display: block;
+        height: 6vh;
+        font-size: small;
+        align-content: center;
+        text-align: center;
+        width: 16vw;
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .perfume_intro>a:hover{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+    }   
+    .description_1{
+        height: 22vh;
+        width: 100%;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+        text-align: center;
+        align-content: center;
+    }
+    .description_heading{
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 1px;
+    }
+    .description_summary{
+        font-size: small;
+        color: gray;
+        margin-top: -4px;
+    }
+    .collections{
+        height: 260vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .collections_heading{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        margin-top: -150px;
+    }
+    .collections_summary{
+        text-align: center;
+        line-height: 10px;
+        color: gray;
+        font-size: x-small;
+        margin-top: -120px;
+    }
+    .product_intro{
+        height: 35vh;
+        width: 90vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 13px;
+    }
+    .product_intro_img_container{
+        height: 20vh;
+        width: 20vw;
+    }  
+    .product_intro_img_container>p{
+        margin-top: -3px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .product_intro_img{
+        width: 100%;
+        height: 100%;
+    } 
+    .main_img_2{
+        height: 80vh;
+        width: 80vw;
+        text-align: center;
+        margin-left: 35px;
+    }
+    .img_2{
+        height: 100%;
+        width: 100%;
+    }
+    .features_heading{
+        height: 7vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+        margin-left: 34px;
+    }
+    .btn_group{
+        text-align: center;
+    }
+    .btn_group>a{
+        height: 4vh;
+        width: 5vw;
+        border: 1px solid red;
+        color: red;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn_group>a:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+    .feature_brands{
+        height: 66vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 34px;
+    }
+    .kenzo,.oriflame{
+        height: 50vh;
+        width: 23vw;
+    }
+    .kenzo>p,.divine>p{
+        margin-top: -2px;
+        font-size: small;
+        color: gray;
+    }
+    .divine{
+        height: 50vh;
+        width: 25vw;
+    }
+    .kenzo_img,.oriflame_img,.divine_img{
+        width: 100%;
+        height: 25vh;
+    }
+    .oriflame_logo,.kenzo_logo{
+        height: 4vh;
+    }
+    .bottom_logo{
+        margin-top: -14px;
+        height: 12vh;
+        width: 13vw;
+    }
+    .customer_remark{
+        height: 60vh;
+        width: 100%;
+        border: 1px solid #add8e694;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+    .customer_remark_heading{
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 60px;
+    }
+    .reports{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .reports>div{
+        height: 36vh;
+        width: 20vw;
+        border: 1px solid;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        
+    }
+    .txt_1{
+        margin-left: 20px;
+        font-size: 3rem;
+        margin-top: -1px;
+        height: 6vh;
+        color: #38b6ff;
+    }
+    .main_report{
+        margin-top: -34px;
+        font-size: x-small;
+        color: gray;
+        width: 15vw;
+        margin-left: 20px;
+    }
+    .reports_img{
+        height: 4vh;
+        margin-left: 20px;
+    }
+    .last_part{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .last_part>div{
+        height: 30vh;
+        width: 20vw;
+    }
+    .verify>i{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: larger;
+        color: #5271ff;
+    }
+    .last_part_heading{
+        text-align: center;
+        font-weight: bolder;
+        font-size: small;
+    }
+    .last_part_summary{
+        color: gray;
+        font-size: x-small;
+        width: 16vw;
+        margin-left: 22px;
+        text-align: center;
+    }
+    footer{
+        height: 74vh;
+        width: 100%;
+    }
+    .footer_1{
+        height: 65vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+   
+    .footer_1_heading{
+        height: 24vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer_1_heading>p{
+        width: 19vw;
+        color: gray;
+        font-size: x-small;
+        margin-top: -1px;
+    }
+    .Subscribe_container{
+        height: 15vh;
+        width: 35vw;
+        border: 2px solid gray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .Subscribe_container>div{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        margin-top: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20vw;
+    }
+    .Subscribe_container>a{
+        height: 5vh;
+        width: 6vw;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: 3px;
+        border-color: #38b6ff;
+        color: #38b6ff;
+    }
+    .footer_1_links{
+        height: 34vh;
+        width: 84vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .link_group_1{
+        list-style: none;
+        display: grid;
+        place-content: center;
+    }
+    .link_group_2{
+        list-style: none;
+    }
+    .link_1{
+        font-weight: bolder;
+    }
+    .link_2{
+        font-weight: 100;
+    }
+    .link_2>a{
+        color: gray;
+        text-decoration: none;
+        font-size: small;
+    }
+    .footer_2{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer_img{
+        height: 6vh;
+    }
+    .footer_img_2{
+        height: 3vh;
+    }
+    .payment_method{
+        height: 100%;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials{
+        height: 100%;
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials>p{
+        color: gray;
+        font-size: small;
+    }
+    .socials>a{
+        height: 5vh;
+        width: 6vw;
+        border: 1px solid #38b6ff;
+        border-radius: 20px 20px 20px 20px;
+        display: grid;
+        place-content: center;
+        color: white;
+        background-color: #38b6ff;
+    }
+}
+@media screen and (min-width:600px) and (max-width:750px){
+    header{
+        height: 18vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+
+    }
+    nav{
+        height: 12vh;
+        width: 83vw;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+    }
+    .sidebar{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+      
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .nav_link_1{
+       display: none;
+    }
+    .nav_link_2{
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_2>a{
+        color: white;
+        font-size: large;
+    }
+    /* section */
+    section{
+        height: 600vh;
+        width: 100%;
+    }
+    .main_img{
+        height: 82vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+    .samples{
+        height: 89vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+    }
+    .samples>div{
+        height: 36vh;
+        width: 83vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sample_1,.sample_2,.sample_3,.fragrance_intro{
+        height: 80%;
+        width: 20vw;
+    }
+    .sample_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px 6px 6px 6px;
+    }
+    .intro_title{
+        font-size: 1.2rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 1px;
+    }
+    .intro_summary{
+        font-size: x-small;
+        margin-top: -18px;
+    }
+    .fragrance_intro>a{
+        height: 7vh;
+        width: 14vw;
+        border: 2px solid black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: black;
+        font-size: small;
+        margin-left: 18px;
+        margin-top: -5px;
+    }
+    .fragrance_intro>a:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    } 
+    .perfume_intro{
+        height: 100%;
+        width: 30vw;
+        background-image: url('images.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .perfume_intro_heading{
+        width: 15vw;
+        font-size: 0.8rem;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 6px;
+        margin-left: 20px;
+    }
+    .perfume_intro_summary{
+        width: 14.9vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        color: white;
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+    .perfume_intro>a{
+        border: 2px solid;
+        display: block;
+        height: 6vh;
+        font-size: small;
+        align-content: center;
+        text-align: center;
+        width: 16vw;
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .perfume_intro>a:hover{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+    }   
+    .description_1{
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+        text-align: center;
+        align-content: center;
+    }
+    .description_heading{
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 1px;
+    }
+    .description_summary{
+        font-size: small;
+        color: gray;
+        margin-top: -4px;
+    }
+    .collections{
+        height: 290vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .collections_heading{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        margin-top: -6px;
+    }
+    .collections_summary{
+        text-align: center;
+        line-height: 2px;
+        color: gray;
+        font-size: x-small;
+    }
+    .product_intro{
+        height: 35vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .product_intro_img_container{
+        height: 23vh;
+        width: 18vw;
+    }  
+    .product_intro_img_container>p{
+        margin-top: -3px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .product_intro_img{
+        width: 100%;
+        height: 100%;
+    } 
+    .main_img_2{
+        height: 120vh;
+        width: 80vw;
+        text-align: center;
+    }
+    .img_2{
+        height: 100%;
+        width: 100%;
+    }
+    .features_heading{
+        height: 7vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+    }
+    .btn_group{
+        text-align: center;
+    }
+    .btn_group>a{
+        height: 6vh;
+        width: 5vw;
+        border: 1px solid red;
+        color: red;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn_group>a:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+    .feature_brands{
+        height: 66vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .kenzo,.oriflame{
+        height: 55vh;
+        width: 20vw;
+    }
+    .kenzo>p,.divine>p{
+        margin-top: -2px;
+        font-size: small;
+        color: gray;
+    }
+    .divine{
+        height: 60vh;
+        width: 20vw;
+    }
+    .kenzo_img,.oriflame_img,.divine_img{
+        width: 100%;
+        height: 32vh;
+    }
+    .oriflame_logo,.kenzo_logo{
+        height: 4vh;
+    }
+    .bottom_logo{
+        margin-top: -14px;
+        height: 12vh;
+        width: 13vw;
+    }
+    .customer_remark{
+        height: 60vh;
+        width: 100%;
+        border: 1px solid #add8e694;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+    .customer_remark_heading{
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 60px;
+    }
+    .reports{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .reports>div{
+        height: 36vh;
+        width: 20vw;
+        border: 1px solid;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        
+    }
+    .txt_1{
+        margin-left: 20px;
+        font-size: 3rem;
+        margin-top: -1px;
+        height: 6vh;
+        color: #38b6ff;
+    }
+    .main_report{
+        margin-top: -34px;
+        font-size: x-small;
+        color: gray;
+        width: 15vw;
+        margin-left: 20px;
+    }
+    .reports_img{
+        height: 4vh;
+        margin-left: 20px;
+    }
+    .last_part{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .last_part>div{
+        height: 30vh;
+        width: 20vw;
+    }
+    .verify>i{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: larger;
+        color: #5271ff;
+    }
+    .last_part_heading{
+        text-align: center;
+        font-weight: bolder;
+    }
+    .last_part_summary{
+        color: gray;
+        font-size: x-small;
+        width: 16vw;
+        margin-left: 22px;
+        text-align: center;
+    }
+    footer{
+        height: 80vh;
+        width: 100%;
+    }
+    .footer_1{
+        height: 80vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+   
+    .footer_1_heading{
+        height: 24vh;
+        width: 65vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer_1_heading>p{
+        width: 19vw;
+        color: gray;
+        font-size: x-small;
+        margin-top: -1px;
+    }
+    .Subscribe_container{
+        height: 15vh;
+        width: 30vw;
+        border: 2px solid gray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .Subscribe_container>div{
+        margin-top: 20px;
+        font-size: 1.3rem;
+        margin-top: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20vw;
+    }
+    .Subscribe_container>a{
+        height: 8vh;
+        width: 6vw;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: 3px;
+        border-color: #38b6ff;
+        color: #38b6ff;
+    }
+    .footer_1_links{
+        height: 30vh;
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .link_group_1,.link_group_1,.link_group_2{
+        height: 23vh;
+        width: 15vw;
+        list-style: none;
+    }
+    .link_1{
+        font-weight: bolder;
+    }
+    .link_2{
+        font-weight: 100;
+    }
+    .link_2>a{
+        color: gray;
+        text-decoration: none;
+    }
+    .footer_2{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer_img{
+        height: 6vh;
+    }
+    .footer_img_2{
+        height: 3vh;
+    }
+    .payment_method{
+        height: 100%;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials{
+        height: 100%;
+        width: 32vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials>p{
+        color: gray;
+    }
+    .socials>a{
+        height: 5vh;
+        width: 4vw;
+        border: 1px solid #38b6ff;
+        border-radius: 20px 20px 20px 20px;
+        display: grid;
+        place-content: center;
+        color: white;
+        background-color: #38b6ff;
+    }
+}
+@media screen and (min-width:799px) and (max-width:999px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    }
+    header{
+        height: 18vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+
+    }
+    nav{
+        height: 10vh;
+        width: 83vw;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+    }
+    .sidenav{
+        display: none;
+    }
+    .sidenav>a{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+    script{
+        display: none;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .nav_link_1{
+        width: 35vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_1>a{
+        text-decoration: none;
+        color: white;
+        border-radius: 20px 20px 20px 20px;
+        width: 8vw;
+        height: 6vh;
+        font-size: small;
+    }
+    .nav_link_1>a:hover{
+        color: white;
+        background-color:dodgerblue;
+        display: grid;
+        place-content: center;
+    }
+    .nav_link_2{
+        width: 10vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_2>a{
+        color: white;
+    }
+     /* section */
+     section{
+        height: 630vh;
+        width: 100%;
+    }
+    .main_img{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        height: 100%;
+        width: 80vw;
+    }
+    .samples{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+    }
+    .samples>div{
+        height: 40vh;
+        width: 64vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sample_1,.sample_2,.sample_3,.fragrance_intro{
+        height: 100%;
+        width: 15vw;
+    }
+    .sample_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px 6px 6px 6px;
+    }
+    .intro_title{
+        font-size: 1.2rem;
+        margin-top: 1px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .intro_summary{
+        font-size: x-small;
+        margin-top: -4px;
+    }
+    .fragrance_intro>a{
+        height: 7vh;
+        width: 13vw;
+        border: 2px solid black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: black;
+        font-size: small;
+        margin-left: 4px;
+    }
+    .fragrance_intro>a:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    } 
+    .perfume_intro{
+        height: 100%;
+        width: 30vw;
+        background-image: url('images.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .perfume_intro_heading{
+        width: 15vw;
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 7px;
+        margin-left: 20px;
+    }
+    .perfume_intro_summary{
+        width: 14.9vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        color: white;
+        margin-left: 20px;
+        margin-top: -11px;
+    }
+    .perfume_intro>a{
+        border: 2px solid;
+        display: block;
+        height: 8vh;
+        font-size: small;
+        align-content: center;
+        text-align: center;
+        width: 13vw;
+        margin-left: 20px;
+        margin-top: -10px;
+        text-decoration: none;
+        color: black;
+    }
+    .perfume_intro>a:hover{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+    }   
+    .description_1{
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+        text-align: center;
+        align-content: center;
+    }
+    .description_heading{
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .description_summary{
+        font-size: small;
+        color: gray;
+    }
+    .collections{
+        height: 290vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .collections_heading{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        margin-top: -10px;
+    }
+    .collections_summary{
+        text-align: center;
+        line-height: 1px;
+        color: gray;
+        font-size: small;
+    }
+    .product_intro{
+        height: 40vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .product_intro_img_container{
+        height: 25vh;
+        width: 15vw;   
+    }  
+    .product_intro_img_container>p{
+        margin-top: -3px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .product_intro_img{
+        width: 100%;
+        height: 100%;
+    } 
+    .main_img_2{
+        height: 130vh;
+        width: 80vw;
+        text-align: center;
+    }
+    .img_2{
+        height: 100%;
+        width: 100%;
+    }
+    .features_heading{
+        height: 7vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+    }
+    .btn_group{
+        text-align: center;
+    }
+    .btn_group>a{
+        height: 4vh;
+        width: 3vw;
+        border: 1px solid red;
+        color: red;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn_group>a:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+    .feature_brands{
+        height: 66vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .kenzo,.oriflame{
+        height: 55vh;
+        width: 20vw;
+    }
+    .kenzo>p,.divine>p{
+        margin-top: -2px;
+        font-size: small;
+        color: gray;
+    }
+    .divine{
+        height: 60vh;
+        width: 20vw;
+    }
+    .kenzo_img,.oriflame_img,.divine_img{
+        width: 100%;
+        height: 38vh;
+    }
+    .oriflame_logo,.kenzo_logo{
+        height: 6vh;
+
+    }
+    .bottom_logo{
+        margin-top: -14px;
+        height: 12vh;
+        width: 13vw;
+    }
+    .customer_remark{
+        height: 66vh;
+        width: 100%;
+        border: 1px solid #add8e694;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+    .customer_remark_heading{
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 60px;
+    }
+    .reports{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .reports>div{
+        height: 32vh;
+        width: 20vw;
+        border: 1px solid;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    .txt_1{
+        margin-left: 20px;
+        font-size: 3rem;
+        margin-top: -1px;
+        height: 6vh;
+        color: #38b6ff;
+    }
+    .main_report{
+        margin-top: -34px;
+        font-size: smaller;
+        color: gray;
+        width: 15vw;
+        margin-left: 20px;
+    }
+    .reports_img{
+        height: 4vh;
+        margin-left: 20px;
+    }
+    .last_part{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .last_part>div{
+        height: 20vh;
+        width: 20vw;
+    }
+    .verify>i{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: larger;
+        color: #5271ff;
+    }
+    .last_part_heading{
+        text-align: center;
+        font-weight: bolder;
+    }
+    .last_part_summary{
+        color: gray;
+        font-size: small;
+        width: 16vw;
+        margin-left: 22px;
+        text-align: center;
+    }
+    footer{
+        height: 80vh;
+        width: 100%;
+    }
+    .footer_1{
+        height: 80vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+   
+    .footer_1_heading{
+        height: 24vh;
+        width: 65vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer_1_heading>p{
+        width: 19vw;
+        color: gray;
+        font-size: small;
+        margin-top: -1px;
+    }
+    .Subscribe_container{
+        height: 15vh;
+        width: 30vw;
+        border: 2px solid gray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .Subscribe_container>div{
+        margin-top: 20px;
+        font-size: 1.7rem;
+        margin-top: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20vw;
+    }
+    .Subscribe_container>a{
+        height: 7vh;
+        width: 4vw;
+        border: 2px solid;
+        display: grid;
+        place-content: center;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: 3px;
+        border-color: #38b6ff;
+        color: #38b6ff;
+    }
+    .footer_1_links{
+        height: 30vh;
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .link_group_1,.link_group_1,.link_group_2{
+        height: 23vh;
+        width: 15vw;
+        list-style: none;
+    }
+    .link_1{
+        font-weight: bolder;
+    }
+    .link_2{
+        font-weight: 100;
+    }
+    .link_2>a{
+        color: gray;
+        text-decoration: none;
+    }
+    .footer_2{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer_img{
+        height: 6vh;
+    }
+    .footer_img_2{
+        height: 4vh;
+    }
+    .payment_method{
+        height: 100%;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials{
+        height: 100%;
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials>p{
+        color: gray;
+    }
+    .socials>a{
+        height: 5vh;
+        width: 2.6vw;
+        border: 1px solid #38b6ff;
+        border-radius: 20px 20px 20px 20px;
+        display: grid;
+        place-content: center;
+        color: white;
+        background-color: #38b6ff;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1200px){
+    header{
+        height: 18vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+
+    }
+    nav{
+        height: 8vh;
+        width: 80vw;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+    }
+    .sidenav{
+        display: none;
+    }
+    .sidenav>a{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+    script{
+        display: none;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .nav_link_1{
+        width: 35vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_1>a{
+        text-decoration: none;
+        color: white;
+        border-radius: 20px 20px 20px 20px;
+        width: 8vw;
+        height: 6vh;
+    }
+    .nav_link_1>a:hover{
+        
+        color: white;
+        background-color:dodgerblue;
+        display: grid;
+        place-content: center;
+    }
+    .nav_link_2{
+        width: 8vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_2>a{
+        color: white;
+    }
+     /* section */
+     section{
+        height: 610vh;
+        width: 100%;
+    }
+    .main_img{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+    .samples{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+    }
+    .samples>div{
+        height: 40vh;
+        width: 64vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sample_1,.sample_2,.sample_3,.fragrance_intro{
+        height: 100%;
+        width: 15vw;
+    }
+   
+    .sample_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px 6px 6px 6px;
+    }
+    .intro_title{
+        font-size: 1.5rem;
+        height: 4vh;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .intro_summary{
+        font-size: small;
+    }
+    .fragrance_intro>a{
+        height: 6vh;
+        width: 10vw;
+        border: 2px solid black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: black;
+        font-size: small;
+    }
+    .fragrance_intro>a:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    } 
+    .perfume_intro{
+        height: 100%;
+        width: 30vw;
+        background-image: url('images.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .perfume_intro_heading{
+        width: 15vw;
+        font-size: 1.3rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .perfume_intro_summary{
+        width: 14.9vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        color: white;
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+    .perfume_intro>a{
+        border: 2px solid;
+        display: block;
+        height: 8vh;
+        align-content: center;
+        text-align: center;
+        width: 13vw;
+        margin-left: 50px;
+        text-decoration: none;
+        color: black;
+    }
+    .perfume_intro>a:hover{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+    }   
+    .description_1{
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+        text-align: center;
+        align-content: center;
+    }
+    .description_heading{
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .description_summary{
+        font-size: small;
+        color: gray;
+    }
+    .collections{
+        height: 290vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .collections_heading{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+    }
+    .collections_summary{
+        text-align: center;
+        line-height: 1px;
+        color: gray;
+        font-size: small;
+    }
+    .product_intro{
+        height: 35vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .product_intro_img_container{
+        height: 25vh;
+        width: 15vw;   
+    }  
+    .product_intro_img_container>p{
+        margin-top: -3px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .product_intro_img{
+        width: 100%;
+        height: 100%;
+    } 
+    .main_img_2{
+        height: 130vh;
+        width: 80vw;
+        text-align: center;
+    }
+    .img_2{
+        height: 100%;
+        width: 100%;
+    }
+   
+    .features_heading{
+        height: 7vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+    }
+    .btn_group{
+        text-align: center;
+    }
+    .btn_group>a{
+        height: 4vh;
+        width: 3vw;
+        border: 1px solid red;
+        color: red;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn_group>a:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+    .feature_brands{
+        height: 66vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .kenzo,.oriflame{
+        height: 55vh;
+        width: 20vw;
+    }
+    .kenzo>p,.divine>p{
+        margin-top: -2px;
+        font-size: small;
+        color: gray;
+    }
+    .divine{
+        height: 60vh;
+        width: 20vw;
+    }
+    .kenzo_img,.oriflame_img,.divine_img{
+        width: 100%;
+        height: 40vh;
+    }
+    .oriflame_logo,.kenzo_logo{
+        height: 6vh;
+
+    }
+    .bottom_logo{
+        margin-top: -14px;
+        height: 12vh;
+        width: 13vw;
+    }
+    .customer_remark{
+        height: 60vh;
+        width: 100%;
+        border: 1px solid #add8e694;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+    .customer_remark_heading{
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 60px;
+    }
+    .reports{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .reports>div{
+        height: 32vh;
+        width: 20vw;
+        border: 1px solid;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    .txt_1{
+        margin-left: 20px;
+        font-size: 3rem;
+        margin-top: -1px;
+        height: 6vh;
+        color: #38b6ff;
+    }
+    .main_report{
+        margin-top: -34px;
+        font-size: smaller;
+        color: gray;
+        width: 15vw;
+        margin-left: 20px;
+    }
+    .reports_img{
+        height: 4vh;
+        margin-left: 20px;
+    }
+    .last_part{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .last_part>div{
+        height: 20vh;
+        width: 20vw;
+    }
+    .verify>i{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: larger;
+        color: #5271ff;
+    }
+    .last_part_heading{
+        text-align: center;
+        font-weight: bolder;
+    }
+    .last_part_summary{
+        color: gray;
+        font-size: small;
+        width: 16vw;
+        margin-left: 22px;
+        text-align: center;
+    }
+    footer{
+        height: 80vh;
+        width: 100%;
+    }
+    .footer_1{
+        height: 80vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+   
+    .footer_1_heading{
+        height: 24vh;
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer_1_heading>p{
+        width: 16vw;
+        height: 15vh;
+        color: gray;
+        font-size: small;
+        margin-top: -1px;
+    }
+    .Subscribe_container{
+        height: 15vh;
+        width: 30vw;
+        border: 2px solid gray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .Subscribe_container>div{
+        margin-top: 20px;
+        font-size: 2.3rem;
+        margin-top: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20vw;
+    }
+    .Subscribe_container>a{
+        height: 9vh;
+        width: 4vw;
+        border: 2px solid;
+        display: grid;
+        place-content: center;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: 3px;
+        border-color: #38b6ff;
+        color: #38b6ff;
+    }
+    .footer_1_links{
+        height: 30vh;
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .link_group_1,.link_group_1,.link_group_2{
+        height: 23vh;
+        width: 15vw;
+        list-style: none;
+    }
+    .link_1{
+        font-weight: bolder;
+    }
+    .link_2{
+        font-weight: 100;
+    }
+    .link_2>a{
+        color: gray;
+        text-decoration: none;
+    }
+    .footer_2{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer_img{
+        height: 6vh;
+    }
+    .footer_img_2{
+        height: 4vh;
+    }
+    .payment_method{
+        height: 100%;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials{
+        height: 100%;
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials>p{
+        color: gray;
+    }
+    .socials>a{
+        height: 5vh;
+        width: 3vw;
+        border: 1px solid #38b6ff;
+        border-radius: 20px 20px 20px 20px;
+        display: grid;
+        place-content: center;
+        color: white;
+        background-color: #38b6ff;
+    }
+}
+@media screen and (min-width:1200px){
+    
+    header{
+        height: 18vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+
+    }
+    nav{
+        height: 8vh;
+        width: 80vw;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+    }
+    .logo{
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    .nav_link_1{
+        width: 35vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_1>a{
+        text-decoration: none;
+        color: white;
+        border-radius: 20px 20px 20px 20px;
+        width: 8vw;
+        height: 6vh;
+    }
+    .nav_link_1>a:hover{
+        
+        color: white;
+        background-color:dodgerblue;
+        display: grid;
+        place-content: center;
+    }
+    .nav_link_2{
+        width: 8vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_link_2>a{
+        color: white;
+    }
+    .dropbtn {
+        color: white;
+        border: none;
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        height: 15vh;
+        width: 12vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px 5px 5px 5px;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: white;
+        height: 4vh;
+        width: 9vw;
+        border: none;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        border-radius: 4px 4px 4px 4px;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+            background-color:#818181;
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: grid;
+        place-content: center;
+        gap: 5px;
+    }
+    .sidenav{
+        display: none;
+    }
+    .sidenav>a{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+    script{
+        display: none;
+    }
+    /* section */
+    section{
+        height: 610vh;
+        width: 100%;
+    }
+    .main_img{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img{
+        height: 100%;
+        width: 100%;
+    }
+    .samples{
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+    }
+    .samples>div{
+        height: 40vh;
+        width: 64vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sample_1,.sample_2,.sample_3,.fragrance_intro{
+        height: 100%;
+        width: 15vw;
+    }
+   
+    .sample_img{
+        height: 100%;
+        width: 100%;
+        border-radius: 6px 6px 6px 6px;
+    }
+    .intro_title{
+        font-size: 1.5rem;
+        height: 4vh;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .intro_summary{
+        font-size: small;
+    }
+    .fragrance_intro>a{
+        height: 6vh;
+        width: 10vw;
+        border: 2px solid black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        align-content: center;
+        color: black;
+    }
+    .fragrance_intro>a:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    }
+    .perfume_intro{
+        height: 100%;
+        width: 30vw;
+        background-image: url('images.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .perfume_intro_heading{
+        width: 15vw;
+        font-size: 1.5rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .perfume_intro_summary{
+        width: 14.9vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+        color: white;
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+    .perfume_intro>a{
+        border: 2px solid;
+        display: block;
+        height: 8vh;
+        align-content: center;
+        text-align: center;
+        width: 13vw;
+        margin-left: 50px;
+        text-decoration: none;
+        color: black;
+    }
+    .perfume_intro>a:hover{
+        border: 2px solid black;
+        background-color: black;
+        color: white;
+    }
+    .description_1{
+        height: 30vh;
+        width: 100%;
+        background: linear-gradient(to bottom right, lightblue, antiquewhite);
+        text-align: center;
+        align-content: center;
+    }
+    .description_heading{
+        font-size: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .description_summary{
+        font-size: small;
+        color: gray;
+    }
+    .collections{
+        height: 290vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+    .collections_heading{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+    }
+    .collections_summary{
+        text-align: center;
+        line-height: 1px;
+        color: gray;
+        font-size: small;
+    }
+    .product_intro{
+        height: 35vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .product_intro_img_container{
+        height: 25vh;
+        width: 15vw;   
+    }  
+    .product_intro_img_container>p{
+        margin-top: -3px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .product_intro_img{
+        width: 100%;
+        height: 100%;
+    } 
+    .main_img_2{
+        height: 130vh;
+        width: 80vw;
+        text-align: center;
+    }
+    .img_2{
+        height: 100%;
+        width: 100%;
+    }
+   
+    .features_heading{
+        height: 7vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+    }
+    .btn_group{
+        text-align: center;
+    }
+    .btn_group>a{
+        height: 4vh;
+        width: 3vw;
+        border: 1px solid red;
+        color: red;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .btn_group>a:hover{
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+    .feature_brands{
+        height: 66vh;
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .kenzo,.oriflame{
+        height: 55vh;
+        width: 20vw;
+    }
+    .kenzo>p,.divine>p{
+        margin-top: -2px;
+        font-size: small;
+        color: gray;
+    }
+    .divine{
+        height: 60vh;
+        width: 20vw;
+    }
+    .kenzo_img,.oriflame_img,.divine_img{
+        width: 100%;
+        height: 40vh;
+    }
+    .oriflame_logo,.kenzo_logo{
+        height: 6vh;
+
+    }
+    .bottom_logo{
+        margin-top: -14px;
+        height: 12vh;
+        width: 13vw;
+    }
+    .customer_remark{
+        height: 60vh;
+        width: 100%;
+        border: 1px solid #add8e694;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+    .customer_remark_heading{
+        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 60px;
+    }
+    .reports{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .reports>div{
+        height: 32vh;
+        width: 20vw;
+        border: 1px solid;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    .txt_1{
+        margin-left: 20px;
+        font-size: 3rem;
+        margin-top: -1px;
+        height: 6vh;
+        color: #38b6ff;
+    }
+    .main_report{
+        margin-top: -34px;
+        font-size: smaller;
+        color: gray;
+        width: 15vw;
+        margin-left: 20px;
+    }
+    .reports_img{
+        height: 4vh;
+        margin-left: 20px;
+    }
+    .last_part{
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .last_part>div{
+        height: 20vh;
+        width: 20vw;
+    }
+    .verify>i{
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-size: larger;
+        color: #5271ff;
+    }
+    .last_part_heading{
+        text-align: center;
+        font-weight: bolder;
+    }
+    .last_part_summary{
+        color: gray;
+        font-size: small;
+        width: 16vw;
+        margin-left: 22px;
+        text-align: center;
+    }
+    footer{
+        height: 80vh;
+        width: 100%;
+    }
+    .footer_1{
+        height: 80vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        background: linear-gradient(to bottom right, #add8e694, antiquewhite);
+
+    }
+   
+    .footer_1_heading{
+        height: 24vh;
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer_1_heading>p{
+        width: 16vw;
+        height: 15vh;
+        color: gray;
+        font-size: small;
+        margin-top: -1px;
+    }
+    .Subscribe_container{
+        height: 15vh;
+        width: 30vw;
+        border: 2px solid gray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .Subscribe_container>div{
+        margin-top: 20px;
+        font-size: 2.8rem;
+        margin-top: 2px;
+        font-family: 'Times New Roman', Times, serif;
+        width: 20vw;
+    }
+    .Subscribe_container>a{
+        height: 9vh;
+        width: 4vw;
+        border: 2px solid;
+        display: grid;
+        place-content: center;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: 3px;
+        border-color: #38b6ff;
+        color: #38b6ff;
+    }
+    .footer_1_links{
+        height: 30vh;
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .link_group_1,.link_group_1,.link_group_2{
+        height: 23vh;
+        width: 15vw;
+        list-style: none;
+    }
+    .link_1{
+        font-weight: bolder;
+    }
+    .link_2{
+        font-weight: 100;
+    }
+    .link_2>a{
+        color: gray;
+        text-decoration: none;
+    }
+    .footer_2{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer_img{
+        height: 6vh;
+    }
+    .footer_img_2{
+        height: 4vh;
+    }
+    .payment_method{
+        height: 100%;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials{
+        height: 100%;
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .socials>p{
+        color: gray;
+    }
+    .socials>a{
+        height: 4vh;
+        width: 2vw;
+        border: 1px solid #38b6ff;
+        border-radius: 20px 20px 20px 20px;
+        display: grid;
+        place-content: center;
+        color: white;
+        background-color: #38b6ff;
+    }
+}
