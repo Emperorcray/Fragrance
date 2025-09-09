@@ -1,225 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    </head>
-    <body>
-        <header>
-           <nav>
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="close">&times;</a>
-                    <a href="perfumes.html">Perfume</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                </div>
-                <span class="sidebar" onclick="openNav()" title="sidemenu">&#9776;</span>
-                <script>
-                    function openNav() {
-                        document.getElementById("mySidenav").style.width = "250px";
-                    }
-                    function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                    }
-                </script>
-                <p class="logo">FRAGRANT</p>
-                <div  class="nav_link_1">
-                    <a href="perfumes.html">Perfume</a>
-                    <a href="">Makeup</a>
-                    <a href="">Fragrance</a>
-                    <a href="">Body care</a>
-                </div>
-                <div class="nav_link_2">
-                    <a href="" title="search"><i class="bi bi-search"></i></a>
-                    <div class="dropdown">
-                        <a href="#" class="dropbtn"><i class="bi bi-person"></i></a>
-                        <div class="dropdown-content">
-                          <a href="#">Login</a>
-                          <a href="sign_up.html">Sign-up</a>
-                        </div>
-                      </div>
-                    <a href="" title="cart"><i class="bi bi-cart"></i></a>
-                </div>
-           </nav>
-        </header>
-        <section>
-            <div class="main_img">
-                <img src="TFW_comp_06_1_2915x.webp" alt="" class="img">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAGRANCE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FRAGRANCE</div>
+            <div class="nav_link1">
+                <a href="index.html">Home</a>
+                <a href="">About us</a>
+                <a href="">Products</a>
+                <a href="">Contact us</a>
             </div>
-            <div class="samples">
-                <div>
-                    <div class="sample_1">
-                        <img src="bal_bl_pump_2.avif" alt="" class="sample_img">
-                    </div>
-                    <div class="fragrance_intro">
-                        <p class="intro_title">FRAGRANCE</p>
-                        <p class="intro_summary">Discover your favourite Fragrances crafted to delight your senses.Find your perfect scent, from modern to classic blends</p>
-                        <a href="">View fragrance</a>
-                    </div>
-                    <div class="sample_2">
-                        <img src="MIHAKVETYVER8purfume_square.webp" alt="" class="sample_img">
-                    </div>
-                    <div class="sample_3">
-                        <img src="mob_vetyver_handlotion.avif" alt="" class="sample_img">
-                    </div>
-                </div>
-                <div>
-                    <div class="sample_1">
-                        <img src="productImage.webp" alt="" class="sample_img">
-                    </div>
-                    <div class="sample_2">
-                        <img src="71DxpmD+CkL.jpg" alt="" class="sample_img">
-                    </div>
-                    <div class="perfume_intro">
-                        <p class="perfume_intro_heading">Discover Your Signature Scent</p>
-                        <p class="perfume_intro_summary">Indulge in luxury scents.Enjoy 15% off your first fragrance purchase for a limited time.</p>
-                        <a href="">Claim Your Offer</a>
-                    </div>
-                </div>
+            <div class="nav_link2">
+                <button title="cart" class="cart"><i class="fi fi-br-shopping-cart"></i></button>
+                <a href="" class="login">Login</a>
+                <a href="" class="join_now">Join now</a>
+                <button title="profile" class="profile"><i class="fi fi-br-user"></i></button>
             </div>
-            <div class="description_1">
-                <p class="description_heading">As Loved By</p>
-                <p class="description_summary">Trusted by the world leading fashion and lifestyle publications</p>
+        </nav>
+    </header>
+    <section>
+        <div class="main_div">
+            <div class="main_title">Glow Naturally, shine Confidently</div>
+            <div class="main_summary">Discover skincare and haircare prodcuts made to nourish and bring out your beauty</div>
+            <div class="main_btn">
+                <a href="" class="shopnow">Shop now</a>
+                <a href="" class="explore">Explore collections</a>
             </div>
-            <div class="collections">
-                <p class="collections_heading">Collections</p>
-                <div class="collections_summary">
-                    <p>Explore our curated collections, designed to capture your personal discovery of exploration and discovery</p>
-                    <p>Let your curiousity guide to finding a fragrance that becomes your signature scent</p>
-                </div>
-                <div class="product_intro">
-                    <div class="product_intro_img_container">
-                        <img src="510yI6vO1SL.jpg" alt="" class="product_intro_img">
-                        <p>Perfume</p>
-                    </div>
-                    <div class="product_intro_img_container">
-                        <img src="oriflame-oncolour-liquid-eye-liner-203928204-99o6w.avif" alt="" class="product_intro_img">
-                        <p>Make-up</p>
-                    </div>
-                    <div class="product_intro_img_container">
-                        <img src="fragrance-spray-bottle-black-woman-studio-beauty-skincare-cosmetics-perfume-face-model-spraying-body-product-267736113.webp" alt="" class="product_intro_img">
-                        <p>Fragrance</p>
-                    </div>
-                    <div class="product_intro_img_container">
-                        <img src="eyJidWNrZXQiOiJic3RuLWltYWdlLXNlcnZlciIsImtleSI6ImNhdGFsb2cvcHJvZHVjdC8yMDAxNzUvMjAwMTc1LTAyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb250YWluIiwid2lkdGgiOjExNjAsImhlaWdodCI6MTQ1MCwiYmFja2d.webp" alt="" class="product_intro_img">
-                        <p>Body care</p>
-                    </div>
-                </div>
-                <div class="main_img_2">
-                    <img src="00-story-byredo-off-white.webp" alt="" class="img_2">
-                </div>
-                <div class="features_heading">
-                    <p>Featured In The Media</p>
-                    <div class="btn_group">
-                        <a href="">&#8592;</a>
-                        <a href="">&#8594;</a>
-                    </div>
-                </div>
-                <div class="feature_brands">
-                    <div class="divine">
-                        <img src="images (3).jpg" alt="" class="divine_img">
-                        <img src="DF-Logo-png-01-300x212.png" alt="" class="bottom_logo">
-                        <p>With winter in full swing, these four fragrances whisked me away to warmer, sunnier days</p>
-                    </div>
-                    <div class="kenzo">
-                        <img src="images (1).jpg" alt="" class="kenzo_img">
-                        <img src="pngegg (1).png" alt="" class="kenzo_logo">
-                        <p>Get 15% off Kenzo perfume this christmas and give your loved ones a touch of luxury</p>
-                    </div>
-                    <div class="oriflame">
-                        <img src="mob_vetyver_handlotion.avif" alt="" class="oriflame_img">
-                        <img src="pngegg.png" alt="" class="oriflame_logo">
-                    </div>
-                </div>
-            </div>
-           <div class="customer_remark">
-                <p class="customer_remark_heading">What our customers are saying</p>
-                <div class="reports">
-                    <div>
-                        <p class="txt_1">"</p>
-                        <p class="main_report">"I found a fragrance that matches my personality. The collection was stunning and the shopping was seamless.I couldn`t be happier!"</p>
-                        <img src="pngegg (1).png" alt="" class="reports_img">
-                    </div>
-                    <div>
-                        <p class="txt_1">"</p>
-                        <p class="main_report">"I found a fragrance that matches my personality. The collection was stunning and the shopping was seamless.I couldn`t be happier!"</p>
-                        <img src="pngegg.png" alt="" class="reports_img">
-                    </div>
-                    <div>
-                        <p class="txt_1">"</p>
-                        <p class="main_report">"I found a fragrance that matches my personality. The collection was stunning and the shopping was seamless.I couldn`t be happier!"</p>
-                    </div>
-                </div>
-           </div>
-           <div class="last_part">
-                <div class="verify">
-                    <i class="bi bi-patch-check"></i>
-                    <p class="last_part_heading">Quality Craftmanship</p>
-                    <p class="last_part_summary">Expertly designed and crafted with premium materials</p>
-                </div>
-                <div class="verify">
-                    <i class="bi bi-truck"></i>
-                    <p class="last_part_heading">Fast & secure shipping</p>
-                    <p class="last_part_summary">Reliable delivery to your doorstep worldwide</p>
-                </div>
-                <div class="verify">
-                    <i class="bi bi-hand-thumbs-up"></i>
-                    <p class="last_part_heading">Quality Craftmanship</p>
-                    <p class="last_part_summary">Easy return and exchange for stress-free shopping experience</p>
-                </div>
-           </div>
-        </section>
-        <footer>
-            <div class="footer_1">
-                    <div class="footer_1_heading">
-                        <p>Stay informed and be first to know!Subscribe to the news letter for updates,exclusive deals,articles and more.</p>
-                        <div class="Subscribe_container">
-                            <div>Subscribe Us</div>
-                            <a href="" target="_blank">&#8594;</a>
-                        </div>
-                    </div>
-                    <div class="footer_1_links">
-                        <ul class="link_group_1">
-                            <li class="link_1">Shop</li>
-                            <li class="link_2"><a href="">Perfume</a></li>
-                            <li class="link_2"><a href="">Fragrance</a></li>
-                            <li class="link_2"><a href="">Makeup</a></li>
-                            <li class="link_2"><a href="">Body care</a></li>
-                        </ul>
-                        <ul class="link_group_1">
-                            <li class="link_1">Company</li>
-                            <li class="link_2"><a href="">About us</a></li>
-                            <li class="link_2"><a href="">FAQS</a></li>
-                            <li class="link_2"><a href="">shipping&delivery</a></li>
-                            <li class="link_2"><a href="">Returns&Exchanges</a></li>
-                            <li class="link_2"><a href="">Contact us</a></li>
-                        </ul>
-                        <ul class="link_group_2">
-                            <li class="link_1">Legal</li>
-                            <li class="link_2"><a href="">Privacy policy</a></li>
-                            <li class="link_2"><a href="">Terms&conditions</a></li>
-                            <li class="link_2"><a href="">Refund policy</a></li>
-                            <li class="link_2"><a href="">Support</a></li>
-                        </ul>
-                    </div>
-            </div>
-            <div class="footer_2">
-                <div class="payment_method">
-                    <img src="pngegg (3).png" alt="" class="footer_img">
-                    <img src="pngegg (4).png" alt="" class="footer_img_2">
-                    <img src="pngegg (5).png" alt="" class="footer_img_2">
-                </div>
-                <div class="socials">
-                    <p>Follow us</p>
-                    <a href="" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="" target="_blank" title="Twitter"><i class="bi bi-twitter-x"></i></a>
-                    <a href="" target="_blank" title="Youtube"><i class="bi bi-youtube"></i></a>
-                </div>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <footer></footer>
+</body>
 </html>
