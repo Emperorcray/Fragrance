@@ -1,591 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
+    overflow-x: hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: linear-gradient(to bottom right, lightblue, antiquewhite);
-    height: 100vh;
-    display: grid;
-    place-content: center;
 }
-/* Mobile view */
-@media screen and (max-width:449px){
-    form{
-        height: 60vh;
-        width: 80vw;
-    }
-    .left{
-        height: 20vh;
+@media screen and (min-width:1047px) and (max-width:1097px){
+    section{
+        height: 100vh;
         width: 100%;
-        background-color: black;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        height: 80vh;
+        width: 40vw;
         display: grid;
         place-content: center;
+        gap: 6px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: -10px 10px 10px gray;
     }
-    .left_heading{
-        color: white;
-        font-size: 2.5rem;
-        font-weight:bold;
-    }
-    .left_summary{
-        color: white;
-        font-size: small;
-        text-align: center;
-   }
-   .right{
-    height: 40vh;
-    width: 100%;
-    background-color: white;
-    }
-    .right_heading{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .right_summary{
-        text-align: end;
-        font-size: small;
-    }
-    .right_summary>a{
-        text-decoration: none;
-        
-    }
-    .input_container{
-        height: 18vh;
-        display: grid;
-        place-content: center;
-        gap: 3px;
-    }
-    .input_container>input{
-        width: 60vw;
-        height: 4vh;
-    }
-    .input_container>input:focus{
-        outline: 1px solid black;
-    }
-    .checkbox_container{
-        text-align: center;
-    }
-    .terms{
+    .logo{
+        height: 8vh;
+        align-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ff94f9;
+        font-style: italic;
         text-decoration: none;
     }
-    .checkbox_container>span{
-        font-size: small;
-    }
-    .submit_container{
-        text-align: center;
-        margin-top: 8px;
-    }
-    .submit_container>input{
-        height: 5vh;
+    .Welcome{
         width: 20vw;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 4px 4px 4px 4px;
-    }
-    .submit_container>input:hover{
-        background-color: black;
-        border: 1px solid black;
-        color: white;
-        cursor: pointer;
-    }
-}
-@media screen and (min-width:450px) and (max-width:499px){
-    form{
-        height: 60vh;
-        width: 80vw;
-    }
-    .left{
-        height: 20vh;
-        width: 100%;
-        background-color: black;
-        display: grid;
-        place-content: center;
-    }
-    .left_heading{
-        color: white;
-        font-size: 2.5rem;
-        font-weight:bold;
-    }
-    .left_summary{
-        color: white;
-        font-size: small;
-        text-align: center;
-   }
-   .right{
-    height: 40vh;
-    width: 100%;
-    background-color: white;
-    }
-    .right_heading{
-        text-align: center;
-        font-size: 2rem;
+        font-size: 22px;
         font-weight: 600;
     }
-    .right_summary{
-        text-align: end;
-        font-size: small;
+    .title{
+        width: 17vw;
+        font-size: 13px;
+        color: grey;
     }
-    .right_summary>a{
-        text-decoration: none;
-        
+    .email,.password{
+        height: 10vh;
+        width: 30vw;
+        display: inline-block;
+        font-size: 14px;
     }
-    .input_container{
-        height: 18vh;
-        display: grid;
-        place-content: center;
-        gap: 3px;
-    }
-    .input_container>input{
-        width: 50vw;
+    .email>input,.password>input{
         height: 5vh;
+        width: 30vw;
+        text-indent: 8px;
+        border-radius: 6px 6px 6px 6px;
+        border: 1px solid grey;
     }
-    .input_container>input:focus{
-        outline: 1px solid black;
+    .email>input::placeholder,.password>input::placeholder{
+        color: grey;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .checkbox_container{
-        text-align: center;
+    .email>input:focus,.password>input:focus{
+        border: none;
+        outline: 2px solid #ff94f9;
     }
-    .terms{
-        text-decoration: none;
-    }
-    .checkbox_container>span{
-        font-size: small;
-    }
-    .submit_container{
-        text-align: center;
-        margin-top: 8px;
-    }
-    .submit_container>input{
-        height: 6vh;
-        width: 15vw;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 4px 4px 4px 4px;
-    }
-    .submit_container>input:hover{
-        background-color: black;
-        border: 1px solid black;
-        color: white;
-        cursor: pointer;
-    }
-}
-@media screen and (min-width:500px) and (max-width:699px){
-    form{
-        height: 60vh;
-        width: 80vw;
-        display: flex;
-    }
-    .left{
-        height: 100%;
-        width: 38vw;
-        background-color: black;
-        display: grid;
-        place-content: center;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    .left_heading{
-        color: white;
-        font-size: 2rem;
-        font-weight:bold;
-    }
-    .left_summary{
-        color: white;
-        font-size: x-small;
-        text-align: center;
-   }
-    .right{
-        height: 100%;
-        width: 43vw;
-        background-color: white;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .right_heading{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .right_summary{
+    .forgot_password{
         text-align: end;
-        font-size: small;
     }
-    .right_summary>a{
-        text-decoration: none;
-        
+    .forgot_password>a{
+        color: grey;
+        font-size: 13px;
     }
-    .input_container{
-        height: 30vh;
-        display: grid;
-        place-content: center;
-        gap: 3px;
+    .forgot_password>a:hover{
+        color: black;
+        transition-duration: 150ms;
     }
-    .input_container>input{
-        width: 30vw;
-        height: 4vh;
-    }
-    .input_container>input:focus{
-        outline: 1px solid black;
-    }
-    .checkbox_container{
-        text-align: center;
-    }
-    .terms{
-        text-decoration: none;
-    }
-    .checkbox_container>span{
-        font-size: small;
-    }
-    .submit_container{
-        text-align: center;
-        margin-top: 8px;
-    }
-    .submit_container>input{
+    .submit{
         height: 6vh;
-        width: 10vw;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 4px 4px 4px 4px;
-    }
-    .submit_container>input:hover{
-        background-color: black;
-        border: 1px solid black;
+        background-color: blueviolet;
+        border: 1px solid blueviolet;
+        border-radius: 8px 8px 8px 8px;
         color: white;
+        font-size: 15px;
         cursor: pointer;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .dont_have_an_account{
+        text-align: center;
+    }
+    .dont_have_an_account>div{
+        font-size: 13px;
+    }
+    .dont_have_an_account>p{
+        color: gray;
+    }
+    .other_logins{
+        height: 8vh;
+        text-align: center;
+        align-content: center;
+        border: 1px solid;
     }
 }
-@media screen and (min-width:700px) and (max-width:800px){
-    form{
-        height: 60vh;
-        width: 70vw;
+@media screen and (min-width:1149px) and (max-width:1199px){
+    section{
+        height: 100vh;
+        width: 100%;
+        border: 1px solid;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .left{
-        height: 100%;
-        width: 30vw;
-        background-color: black;
-        display: grid;
-        place-content: center;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    .left_heading{
-        color: white;
-        font-size: 2.2rem;
-        font-weight:bold;
-    }
-   .left_summary{
-        color: white;
-        font-size: small;
-        text-align: center;
-   }
-    .right{
-        height: 100%;
+    form{
+        height: 80vh;
         width: 40vw;
-        background-color: white;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        display: grid;
+        place-content: center;
+        gap: 6px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: -10px 10px 10px gray;
     }
-    .right_heading{
-        text-align: center;
-        font-size: 2rem;
+    .logo{
+        height: 8vh;
+        align-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ff94f9;
+        font-style: italic;
+        text-decoration: none;
+    }
+    .Welcome{
+        width: 20vw;
+        font-size: 22px;
         font-weight: 600;
     }
-    .right_summary{
-        text-align: end;
-        font-size: small;
+    .title{
+        width: 17vw;
+        font-size: 13px;
+        color: grey;
     }
-    .right_summary>a{
-        text-decoration: none;
-        
-    }
-    .input_container{
-        height: 30vh;
-        display: grid;
-        place-content: center;
-        gap: 3px;
-    }
-    .input_container>input{
+    .email,.password{
+        height: 10vh;
         width: 30vw;
-        height: 4vh;
+        display: inline-block;
+        font-size: 14px;
     }
-    .input_container>input:focus{
-        outline: 1px solid black;
+    .email>input,.password>input{
+        height: 5vh;
+        width: 30vw;
+        text-indent: 8px;
+        border-radius: 6px 6px 6px 6px;
+        border: 1px solid grey;
     }
-    .checkbox_container{
-        text-align: center;
+    .email>input::placeholder,.password>input::placeholder{
+        color: grey;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .terms{
-        text-decoration: none;
+    .email>input:focus,.password>input:focus{
+        border: none;
+        outline: 2px solid #ff94f9;
     }
-    .checkbox_container>span{
-        font-size: small;
+    .forgot_password{
+        text-align: end;
     }
-    .submit_container{
-        text-align: center;
+    .forgot_password>a{
+        color: grey;
+        font-size: 13px;
     }
-    .submit_container>input{
+    .forgot_password>a:hover{
+        color: black;
+        transition-duration: 150ms;
+    }
+    .submit{
         height: 6vh;
-        width: 10vw;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 4px 4px 4px 4px;
-    }
-    .submit_container>input:hover{
-        background-color: black;
-        border: 1px solid black;
+        background-color: blueviolet;
+        border: 1px solid blueviolet;
+        border-radius: 8px 8px 8px 8px;
         color: white;
+        font-size: 15px;
         cursor: pointer;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .dont_have_an_account{
+        text-align: center;
+    }
+    .dont_have_an_account>div{
+        font-size: 13px;
+    }
+    .dont_have_an_account>p{
+        color: gray;
+    }
+    .other_logins{
+        height: 8vh;
+        text-align: center;
+        align-content: center;
+        border: 1px solid;
     }
 }
-@media screen  and (min-width:801px) and (max-width:999px){
-    form{
-        height: 50vh;
-        width: 70vw;
+@media screen and (min-width:1098px) and (max-width:1148px){
+    section{
+        height: 100vh;
+        width: 100%;
+        border: 1px solid;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .left{
-        height: 100%;
-        width: 30vw;
-        background-color: black;
-        display: grid;
-        place-content: center;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    .left_heading{
-        color: white;
-        font-size: 2.2rem;
-        font-weight:bold;
-    }
-   .left_summary{
-        color: white;
-        font-size: small;
-        text-align: center;
-   }
-    .right{
-        height: 100%;
+    form{
+        height: 80vh;
         width: 40vw;
-        background-color: white;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .right_heading{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .right_summary{
-        text-align: end;
-        font-size: small;
-    }
-    .right_summary>a{
-        text-decoration: none;
-        
-    }
-    .input_container{
-        height: 20vh;
         display: grid;
         place-content: center;
-        gap: 3px;
+        gap: 6px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: -10px 10px 10px gray;
     }
-    .input_container>input{
-        width: 30vw;
-        height: 4vh;
-    }
-    .input_container>input:focus{
-        outline: 1px solid black;
-    }
-    .checkbox_container{
-        text-align: center;
-    }
-    .terms{
+    .logo{
+        height: 8vh;
+        align-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ff94f9;
+        font-style: italic;
         text-decoration: none;
     }
-    .checkbox_container>span{
-        font-size: small;
+    .Welcome{
+        width: 20vw;
+        font-size: 22px;
+        font-weight: 600;
     }
-    .submit_container{
-        text-align: center;
-        margin-top: 10px;
+    .title{
+        width: 17vw;
+        font-size: 13px;
+        color: grey;
     }
-    .submit_container>input{
+    .email,.password{
+        height: 10vh;
+        width: 30vw;
+        display: inline-block;
+        font-size: 14px;
+    }
+    .email>input,.password>input{
+        height: 5vh;
+        width: 30vw;
+        text-indent: 8px;
+        border-radius: 6px 6px 6px 6px;
+        border: 1px solid grey;
+    }
+    .email>input::placeholder,.password>input::placeholder{
+        color: grey;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .email>input:focus,.password>input:focus{
+        border: none;
+        outline: 2px solid #ff94f9;
+    }
+    .forgot_password{
+        text-align: end;
+    }
+    .forgot_password>a{
+        color: grey;
+        font-size: 13px;
+    }
+    .forgot_password>a:hover{
+        color: black;
+        transition-duration: 150ms;
+    }
+    .submit{
         height: 6vh;
-        width: 10vw;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 4px 4px 4px 4px;
-    }
-    .submit_container>input:hover{
-        background-color: black;
-        border: 1px solid black;
+        background-color: blueviolet;
+        border: 1px solid blueviolet;
+        border-radius: 8px 8px 8px 8px;
         color: white;
+        font-size: 15px;
         cursor: pointer;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .dont_have_an_account{
+        text-align: center;
+    }
+    .dont_have_an_account>div{
+        font-size: 13px;
+    }
+    .dont_have_an_account>p{
+        color: gray;
+    }
+    .other_logins{
+        height: 8vh;
+        text-align: center;
+        align-content: center;
+        border: 1px solid;
     }
 }
-/* Ipad/Tablet view */
-@media screen and (min-width:1000px) and (max-width:1199px){
-    form{
-        height: 60vh;
-        width: 60vw;
+@media screen and (min-width:1149px) and (max-width:1199px){
+    section{
+        height: 100vh;
+        width: 100%;
+        border: 1px solid;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .left{
-        height: 100%;
-        width: 24vw;
-        background-color: black;
+    form{
+        height: 80vh;
+        width: 40vw;
         display: grid;
         place-content: center;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        gap: 6px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: -10px 10px 10px gray;
     }
-    .left_heading{
-        color: white;
-        font-size: 2.5rem;
-        font-weight:bold;
+    .logo{
+        height: 8vh;
+        align-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ff94f9;
+        font-style: italic;
+        text-decoration: none;
     }
-   .left_summary{
-        color: white;
-        font-size: small;
-        text-align: center;
-   }
-    .right{
-        height: 100%;
-        width: 38vw;
-        background-color: white;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .right_heading{
-        text-align: center;
-        font-size: 2rem;
+    .Welcome{
+        width: 20vw;
+        font-size: 22px;
         font-weight: 600;
     }
-    .right_summary{
+    .title{
+        width: 17vw;
+        font-size: 13px;
+        color: grey;
+    }
+    .email,.password{
+        height: 10vh;
+        width: 30vw;
+        display: inline-block;
+        font-size: 14px;
+    }
+    .email>input,.password>input{
+        height: 5vh;
+        width: 30vw;
+        text-indent: 8px;
+        border-radius: 6px 6px 6px 6px;
+        border: 1px solid grey;
+    }
+    .email>input::placeholder,.password>input::placeholder{
+        color: grey;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .email>input:focus,.password>input:focus{
+        border: none;
+        outline: 2px solid #ff94f9;
+    }
+    .forgot_password{
         text-align: end;
-        font-size: small;
     }
-    .right_summary>a{
-        text-decoration: none;
-        
+    .forgot_password>a{
+        color: grey;
+        font-size: 13px;
     }
-    .input_container{
-        height: 30vh;
-        display: grid;
-        place-content: center;
-        gap: 3px;
+    .forgot_password>a:hover{
+        color: black;
+        transition-duration: 150ms;
     }
-    .input_container>input{
-        width: 24vw;
+    .submit{
         height: 6vh;
-    }
-    .input_container>input:focus{
-        outline: 1px solid black;
-    }
-    .checkbox_container{
-        text-align: center;
-    }
-    .terms{
-        text-decoration: none;
-    }
-    .checkbox_container>span{
-        font-size: small;
-    }
-    .submit_container{
-        text-align: center;
-        margin-top: 10px;
-    }
-    .submit_container>input{
-        height: 6vh;
-        width: 8vw;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 4px 4px 4px 4px;
-    }
-    .submit_container>input:hover{
-        background-color: black;
-        border: 1px solid black;
+        background-color: blueviolet;
+        border: 1px solid blueviolet;
+        border-radius: 8px 8px 8px 8px;
         color: white;
+        font-size: 15px;
         cursor: pointer;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .dont_have_an_account{
+        text-align: center;
+    }
+    .dont_have_an_account>div{
+        font-size: 13px;
+    }
+    .dont_have_an_account>p{
+        color: gray;
+    }
+    .other_logins{
+        height: 8vh;
+        text-align: center;
+        align-content: center;
+        border: 1px solid;
     }
 }
 @media screen and (min-width:1200px){
-    form{
-        height: 60vh;
-        width: 50vw;
+    section{
+        height: 100vh;
+        width: 100%;
+        border: 1px solid;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .left{
-        height: 100%;
-        width: 20vw;
-        background-color: black;
+    form{
+        height: 80vh;
+        width: 40vw;
         display: grid;
         place-content: center;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        gap: 6px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: -10px 10px 10px gray;
     }
-    .left_heading{
-        color: white;
-        font-size: 2.5rem;
-        font-weight:bold;
+    .logo{
+        height: 8vh;
+        align-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ff94f9;
+        font-style: italic;
+        text-decoration: none;
     }
-    .left_summary{
-        color: white;
-        text-align: center;
-    }
-    .right{
-        height: 100%;
-        width: 30vw;
-        background-color: white;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .right_heading{
-        text-align: center;
-        font-size: 2rem;
+    .Welcome{
+        width: 20vw;
+        font-size: 22px;
         font-weight: 600;
     }
-    .right_summary{
+    .title{
+        width: 17vw;
+        font-size: 13px;
+        color: grey;
+    }
+    .email,.password{
+        height: 10vh;
+        width: 30vw;
+        display: inline-block;
+        font-size: 14px;
+    }
+    .email>input,.password>input{
+        height: 5vh;
+        width: 30vw;
+        text-indent: 8px;
+        border-radius: 6px 6px 6px 6px;
+        border: 1px solid grey;
+    }
+    .email>input::placeholder,.password>input::placeholder{
+        color: grey;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .email>input:focus,.password>input:focus{
+        border: none;
+        outline: 2px solid #ff94f9;
+    }
+    .forgot_password{
         text-align: end;
-        font-size: small;
     }
-    .right_summary>a{
-        text-decoration: none;
-        
+    .forgot_password>a{
+        color: grey;
+        font-size: 13px;
     }
-    .input_container{
-        height: 30vh;
-        display: grid;
-        place-content: center;
-        gap: 3px;
+    .forgot_password>a:hover{
+        color: black;
+        transition-duration: 150ms;
     }
-    .input_container>input{
-        width: 24vw;
-        height: 4vh;
-    }
-    .input_container>input:focus{
-        outline: 1px solid black;
-    }
-    .checkbox_container{
-        text-align: center;
-    }
-    .terms{
-        text-decoration: none;
-    }
-    .checkbox_container>span{
-        font-size: small;
-    }
-    .submit_container{
-        text-align: center;
-    }
-    .submit_container>input{
+    .submit{
         height: 6vh;
-        width: 8vw;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 4px 4px 4px 4px;
-    }
-    .submit_container>input:hover{
-        background-color: black;
-        border: 1px solid black;
+        background-color: blueviolet;
+        border: 1px solid blueviolet;
+        border-radius: 8px 8px 8px 8px;
         color: white;
+        font-size: 15px;
         cursor: pointer;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .dont_have_an_account{
+        text-align: center;
+    }
+    .dont_have_an_account>div{
+        font-size: 13px;
+    }
+    .dont_have_an_account>p{
+        color: gray;
+    }
+    .other_logins{
+        height: 8vh;
+        text-align: center;
+        align-content: center;
+        border: 1px solid;
     }
 }
