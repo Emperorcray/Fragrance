@@ -113,4 +113,98 @@ body{
         transition-duration: 150ms;
         color: #ff16f4;
     }
+    section{
+        height: 400vh;
+        width: 100%;
+        border: 1px solid;
+    }
+    .About{
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        gap: 6px;
+        background-color: #ffe1fe;
+    }    
+    .About_us_heading{
+        text-align: center;
+        font-size: 38px;
+    }
+    .About_info{
+        width: 70vw;
+        font-size: 20px;
+        color: #ad00b1;
+    }
+    .story{
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .our_story{
+        height: 60vh;
+        width: 40vw;
+    }
+    .our_story>div{
+        font-weight: 600;
+        font-size: 28px;
+    }
+    .our_story>p{
+        font-size: 17px;
+        color: #3d3d3d;
+        margin-top: 10px;
+    }
+    .story>img{
+        height: 60vh;
+        width: 40vw;
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .values{
+        height: 80vh;
+        width: 100%;
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .values_heading{
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+    }
+    .value_summary{
+        width: 54vw;
+        text-align: center;
+        color: #6d6d6d;
+    }
+    .core_values{
+        height: 50vh;
+        width: 100%;
+        border: 1px solid;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .core_values>div{
+        height: 40vh;
+        width: 20vw;
+        background-color: white;
+        text-align: center;
+        align-content: center;
+        border-radius: 8px 8px 8px 8px;
+    }
+    .core_values>div>i{
+        color: #ff16f4;
+        font-size: 33px;
+    }
+    .core_values_heading{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .value_info{
+        color: #5d5d5d;
+    }
 }
