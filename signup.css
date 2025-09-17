@@ -9,15 +9,14 @@ body{
 
 @media screen and (min-width:1200px){
     section{
-        height: 100vh;
+        height: 130vh;
         width: 100%;
-        border: 1px solid;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     form{
-        height: 80vh;
+        height: 95vh;
         width: 40vw;
         display: grid;
         place-content: center;
@@ -93,5 +92,19 @@ body{
     }
     .already_have_an_account>div{
         color: gray;
+    }
+    .or{
+        text-align: center;
+        color: gray;
+        font-size: 13px;
+    }
+    .signup_btn{
+        height: 6vh;
+        align-content: center;
+        text-align: center;
+        border: 1px solid;
+    }
+    .google_signin_link>img{
+        height: 4vh;
     }
 }
