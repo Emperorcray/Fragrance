@@ -102,9 +102,11 @@ body{
         height: 6vh;
         align-content: center;
         text-align: center;
-        border: 1px solid;
     }
     .google_signin_link>img{
         height: 4vh;
+    }
+    .apple_signin_link>img{
+        height: 5vh;
     }
 }
