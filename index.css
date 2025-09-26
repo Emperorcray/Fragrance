@@ -190,13 +190,12 @@ body{
     .featured{
         height: 150vh;
         width: 100%;
-        border: 1px solid;
         background-color: #f6f6f6;
+        align-content: center;
     }
     .featured_heading{
         height: 30vh;
         width: 100%;
-        border: 1px solid;
         display: grid;
         place-content: center;
         gap: 20px;
@@ -215,7 +214,6 @@ body{
     .featured_products{
         height: 80vh;
         width: 100%;
-        border: 1px solid;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -260,5 +258,53 @@ body{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    footer{
+        height: 60vh;
+        width: 100%;
+        background-color: black;
+        display: grid;
+        place-content: center;
+    }
+    .footer_1{
+        height: 30vh;
+        width: 90vw;
+        border: 1px solid white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer_logo{
+        height: 100%;
+        width: 23vw;
+    }
+    .footer_logo>p{
+        color: white;
+    }
+    .shop,.support,.connect{
+        height: 100%;
+        width: 13vw;
+    }
+    .shop>p,.support>p,.connect>p{
+        color: white;
+        font-weight: 600;
+    }
+    .shop>a,.support>a,.connect>a{
+        text-decoration: none;
+        color: #e7e7e7;
+        font-size: 14px;
+    }
+    .shop>a:hover,.support>a:hover,.connect>a:hover{
+        color: #ff16f4;
+        transition-duration: 300ms;
+    }
+    .footer_2{
+        height: 10vh;
+        align-content: center;
+        text-align: center;
+        color: #d1d1d1;
     }
 }
