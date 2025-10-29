@@ -2166,7 +2166,7 @@ body{
         justify-content: space-evenly;
     }
     .nav_link1>a{
-        color: rgb(10, 9, 9);
+        color: black;
         text-decoration: none;
         font-weight: 600;
     }
@@ -2197,7 +2197,7 @@ body{
         color: #ff16f4;
     }
     .login{
-        height: 6vh;
+        height: 35px;
         width: 8vw;
         border: 1.5px solid #f500ff;
         text-align: center;
@@ -2216,7 +2216,7 @@ body{
         box-shadow: 0px 0px 10px #f500ff;
     }
     .join_now{
-        height: 6vh;
+        height: 35px;
         width: 8vw;
         border: 1.5px solid #ff16f4;
         border-radius: 18px 18px 18px 18px;
@@ -2241,12 +2241,12 @@ body{
         color: #ff16f4;
     }
     section{
-        height: 400vh;
+        height: 1900px;
         width: 100%;
         border: 1px solid;
     }
     .main_div{
-        height: 90vh;
+        height: 550px;
         width: 100%;
         background-image: url("media/mainbackgroundimageforhomepage.png");
         background-repeat: no-repeat;
@@ -2268,7 +2268,7 @@ body{
     }
     .main_btn{
         width: 30vw;
-        height: 23vh;
+        height: 120px;
         margin-left: 40px;
         margin-top: 20px;
         display: flex;
@@ -2277,7 +2277,7 @@ body{
         flex-wrap: wrap;
     }
     .shopnow{
-        height: 8vh;
+        height: 50px;
         width: 16vw;
         display: inline-block;
         text-align: center;
@@ -2315,13 +2315,13 @@ body{
         color: white;
     }
     .featured{
-        height: 150vh;
+        height: 800px;
         width: 100%;
         background-color: #f6f6f6;
         align-content: center;
     }
     .featured_heading{
-        height: 30vh;
+        height: 160px;
         width: 100%;
         display: grid;
         place-content: center;
@@ -2339,14 +2339,14 @@ body{
         text-align: center;
     }
     .featured_products{
-        height: 80vh;
+        height: 460px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
     .featured_products>div{
-        height: 64vh;
+        height: 380px;
         width: 22vw;
         box-shadow: 0px 0px 10px #d1d1d1;
         background-color: white;
@@ -2357,7 +2357,7 @@ body{
         box-shadow: 0px 0px 15px #f500ff;
     }
     .products_image1,.products_image2,.products_image3,.products_image4{
-        height: 40vh;
+        height: 250px;
         width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -2387,14 +2387,14 @@ body{
         background-repeat: no-repeat;
     }
     footer{
-        height: 60vh;
+        height: 300px;
         width: 100%;
         background-color: black;
         display: grid;
         place-content: center;
     }
     .footer_1{
-        height: 30vh;
+        height: 150px;
         width: 90vw;
         border: 1px solid white;
         border-top: none;
@@ -2429,7 +2429,7 @@ body{
         transition-duration: 300ms;
     }
     .footer_2{
-        height: 10vh;
+        height: 50px;
         align-content: center;
         text-align: center;
         color: #d1d1d1;
@@ -2625,7 +2625,6 @@ body{
     .featured_heading{
         height: 160px;
         width: 100%;
-        border: 1px solid;
         display: grid;
         place-content: center;
         gap: 20px;
@@ -2697,7 +2696,7 @@ body{
         place-content: center;
     }
     .footer_1{
-        height: 30vh;
+        height: 150px;
         width: 90vw;
         border: 1px solid white;
         border-top: none;
@@ -2732,7 +2731,7 @@ body{
         transition-duration: 300ms;
     }
     .footer_2{
-        height: 10vh;
+        height: 50px;
         align-content: center;
         text-align: center;
         color: #d1d1d1;
