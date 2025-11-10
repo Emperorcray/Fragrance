@@ -864,6 +864,12 @@ body{
         align-items: center;
         justify-content: space-evenly;
     }
+    .sidemenu{
+        display: none;
+    }
+    .sidenav{
+        display: none;
+    }
     .logo{
         font-size: 24px;
         font-weight: 700;
@@ -1243,6 +1249,12 @@ body{
         align-items: center;
         justify-content: space-evenly;
     }
+    .sidemenu{
+        display: none;
+    }
+    .sidenav{
+        display: none;
+    }
     .logo{
         font-size: 24px;
         font-weight: 700;
@@ -1391,7 +1403,7 @@ body{
         transition-duration: 150ms;
     }
     .explore{
-        height: 8vh;
+        height: 50px;
         width: 16vw;
         border: 1.5px solid #e154e1;
         text-align: center;
@@ -1622,6 +1634,12 @@ body{
         align-items: center;
         justify-content: space-evenly;
     }
+    .sidemenu{
+        display: none;
+    }
+    .sidenav{
+        display: none;
+    }
     .logo{
         font-size: 24px;
         font-weight: 700;
@@ -1770,7 +1788,7 @@ body{
         transition-duration: 150ms;
     }
     .explore{
-        height: 8vh;
+        height: 50px;
         width: 16vw;
         border: 1.5px solid #e154e1;
         text-align: center;
@@ -2758,6 +2776,12 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+    }
+    .sidenav{
+        display: none;
+    }
+    .sidemenu{
+        display: none;
     }
     .logo{
         font-size: 24px;
