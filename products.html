@@ -18,7 +18,11 @@
                 <a href="">Contact us</a>
             </div>
             <div class="nav_link2">
-                <button title="cart" class="cart"><i class="fi fi-br-shopping-cart"></i></button>
+                <button title="cart" class="cart" onclick="cartcontent()"><i class="fi fi-br-shopping-cart"></i></button>
+                <div id="cartitems" class="cartitems">
+                    <a href="" id="closecart" onclick="closecartcontent()">close</a>
+                    <p>Still In Development</p>
+                </div>
                 <a href="Login.html" class="login">Login</a>
                 <a href="signup.html" class="join_now">Join now</a>
                 <button title="profile" class="profile"><i class="fi fi-br-user"></i></button>
@@ -31,9 +35,22 @@
             <p>Discover our complete collection of luxury perfumes, each crafted to tell a unique story.</p>
         </div>
         <div class="products_heading">
-            <div class="sort"></div>
+            <div class="sort">
+                <select name="" id="select_products" class="select_products">
+                    <option value="">All Products</option>
+                    <option value="">Female</option>
+                    <option value="">Male</option>
+                    <option value="">Unisex</option>
+                </select>
+                <select name="" id="sort_by_name" class="sort_by_name">
+                    <option value="">Sort by name</option>
+                    <option value="">Price:Low</option>
+                    <option value="">Price:High</option>
+                </select>
+            </div>
             <div class="change_view"></div>
         </div>
+        <div class="products_div"></div>
     </section>
     <footer></footer>
 </body>
