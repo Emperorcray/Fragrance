@@ -81,15 +81,19 @@ option{
         transition-duration: 150ms;
         color: #ff16f4;
     }
-    .cartitems{
+    .cart_items{
         height: 200px;
         border: 1px solid;
         position: fixed;
         z-index: 1;
         margin-top: 300px;
+        display: none;
     }
-    .cartitems>p{
+    .cart_items>p{
         color: black;
+    }
+    .show{
+        display: block;
     }
     .login{
         height: 35px;

@@ -8,10 +8,3 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
-function cartcontent(){
-  document.getElementById("cartitems").style.width = "250px";
-}
-
-function closecartcontent(){
-  document.getElementById("cartitems").style.width = "0";
-}
