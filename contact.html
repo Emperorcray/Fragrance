@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragrance</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-straight/css/uicons-bold-straight.css'><link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
                 <a href="index.html">Home</a>
                 <a href="About.html">About us</a>
                 <a href="products.html">Products</a>
-                <a href="">Contact us</a>
+                <a href="contact.html">Contact us</a>
             </div>
             <div class="nav_link2">
                 <button title="cart" class="cart" onclick="cartcontent()"><i class="fi fi-br-shopping-cart"></i></button>
@@ -28,7 +28,61 @@
             </div>
         </nav>
     </header>
-    <section></section>
+    <section>
+        <div class="main_div">
+            <div>Our Fragrances</div>
+            <p>Discover our complete collection of luxury perfumes, each crafted to tell a unique story.</p>
+        </div>
+        <!-- This contains the contact info (Phone numbers, Email address, Address)-->
+        <div class="contacts_div">
+            <div class="contacts">
+                <div class="contact_icon"><i class="fi fi-bs-marker"></i></div>
+                <div>Address</div>
+                <p>123 Fragrance Avenue Paris, France 75001</p>
+            </div>
+            <div class="contacts">
+                <div class="contact_icon"><i class="fi fi-br-phone-call"></i></div>
+                <div>Phone Number</div>
+                <p>+33 1 23 45 67 89</p>
+                <p>+33 1 98 76 54 32</p>
+            </div>
+            <div class="contacts">
+                <div class="contact_icon"><i class="fi fi-br-envelope"></i></div>
+                <div>Email</div>
+                <p>info@fragrance.com</p>
+                <p>support@fragrance.com</p>
+            </div>
+        </div>
+        <div class="contact_form">
+            <form action="">
+                <div class="form_heading">Send us a Message</div>
+                <div class="name_and_email">
+                    <label for="" class="fullname">
+                        Full Name: <br>
+                        <input type="text" placeholder="Enter your full name" required><br>
+                    </label>
+                    <label for="" class="Email">
+                        Email: <br>
+                        <input type="email" placeholder="Enter your email" required>
+                    </label>
+                </div>
+                <label for="" class="subject">
+                    Subject: <br>
+                    <select name="" id="">
+                        <option value="">Select a subject</option>
+                        <option value="">Order Inquiry</option>
+                    </select>
+                </label>
+                <label for="" class="message">
+                    Message: <br>
+                    <textarea name="" id="" placeholder="Tell me what we can help with"></textarea>
+                </label>
+                <div class="submit">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="footer_1">
             <div class="footer_logo">
