@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+input{
+    font-family: inherit;
+}
+input:placeholder-shown{
+    font-family: inherit;
+}
+@media screen and (min-width:1200px){
+    .container{
+        height: 800px;
+        width: 100%;
+        border: 1px solid;
+        display: grid;
+        place-content: center;
+    }
+    form{
+        height: 600px;
+        width: 40vw;
+        border: 1px solid;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .heading{
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        font-size: 30px;
+        color: #ff54f6;
+    }
+    .username{
+        height: 90px;
+        width: 100%;
+        border: 1px solid;
+        display: grid;
+        place-content: center;
+        color: #6d6d6d;
+    }
+    .username>input{
+        height: 40px;
+        width: 30vw;
+        border: 1px solid;
+        border-radius: 8px 8px 8px 8px;
+        color: #6d6d6d;
+    }
+    .username>input:placeholder-shown{
+        text-indent: 13px;
+    }
+    .username>input:focus{
+        outline: 1.5px solid #ff54f6;
+        border: none;
+    }
+    .password{
+        height: 100px;
+        width: 100%;
+        border: 1px solid;
+        display: grid;
+        place-content: center;
+        color: #6d6d6d;
+    }
+    .password>input{
+        height: 40px;
+        width: 30vw;
+        border: 1px solid;
+        border-radius: 8px 8px 8px 8px;
+        color: #6d6d6d;
+    }
+    .password>div{
+        text-align: end;
+        font-size: 12px;
+        transition-duration: 300ms;
+    }
+    .password>input:placeholder-shown{
+        text-indent: 13px;
+    }
+    .password>input:focus{
+        outline: 1.5px solid #ff54f6;
+        border: none;
+    }
+    .submit{
+        height: 80px;
+        width: 100%;
+        border: 1px solid;
+        display: grid;
+        place-content: center;
+    }
+    .submit>input{
+        height: 50px;
+        width: 20vw;
+        border: 1px solid #d100d9;
+        background-color: #d100d9;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 10px 10px 10px 10px;
+    }
+}
