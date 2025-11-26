@@ -100,5 +100,45 @@ input:placeholder-shown{
         font-size: 20px;
         font-weight: 600;
         border-radius: 10px 10px 10px 10px;
+        cursor: pointer;
+    }
+    .or{
+        text-align: center;
+    }
+    .other_logins{
+        height: 150px;
+        width: 100%;
+        border: 1px solid;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+    }
+    .google_login,.apple_login{
+        height: 60px;
+        width: 20vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 10px 10px 10px 10px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .google_login{
+        color: black;
+        border: 1.5px solid #d100d9;
+    }
+    .google_login:hover{
+        background-color: #d100d9;
+        color: white;
+        transition-duration: 0.5s;
+    }
+    .apple_login{
+        color: white;
+        background-color: #ff54f6;
+        border: 1.5px solid #ff54f6;
+    }
+    .apple_login:hover{
+        transition-duration: 0.5s;
+        background-color: #d100d9;
     }
 }
