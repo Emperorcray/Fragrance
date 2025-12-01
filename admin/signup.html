@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragrance admin login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Fragrance admin signup</title>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
     <div class="container">
         <form action="">
-            <div class="heading">ADMIN LOGIN</div>
-            <label for=""  class="email">
+            <div class="heading">ADMIN  SIGN UP</div>
+            <label for="" class="fullname">
+                Full Name: <br>
+                <!-- This input is for the user`s full name when creating an account-->
+                <input type="text" placeholder="Enter full name" required>
+            </label><br>
+            <label for="" class="email">
                 Email: <br>
-                <input type="email" placeholder="Enter your email" required>
+                <!-- This input is for the user`s email when creating an account-->
+                <input type="email" name="email" id="" placeholder="Enter your email" required>
+            </label><br>
+            <label for=""  class="username">
+                Username: <br>
+                <input type="text" placeholder="Enter your last name" required>
             </label> <br>
             <label for="" class="password">
                 Password: <br>
                 <input type="password" name="" id="" placeholder="Enter password" required>
-                <div>
-                    <a href="">Forgot password?</a>
-                </div>
             </label>
             <!-- This div contains the submit button for the form-->
             <div class="submit">
@@ -31,7 +38,7 @@
                 <a href="" class="google_login">Continue with google<i class="fi fi-brands-google"></i></a>
                 <a href="" class="apple_login">Continue with apple<i class="fi fi-brands-apple"></i></a>
             </div>
-            <div class="register">Don`t have an account? <a href="signup.html">Sign up</a></div>
+            <div class="login">Already have an account <a href="index.html">Login</a></div>
         </form>
     </div>
 </body>
